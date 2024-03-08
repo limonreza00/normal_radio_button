@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         val genderDisplay = findViewById<TextView>(R.id.genderDisplay)
         val radioGroup1 = findViewById<RadioGroup>(R.id.radioGroup1)
         val showButton = findViewById<Button>(R.id.showBtn)
+        val secondDisplay =findViewById<TextView>(R.id.secondDisplay)
+        val radioGroup2 = findViewById<RadioGroup>(R.id.radioGroup2)
 
         showButton.setOnClickListener {
             val selectedButtonId = radioGroup1.checkedRadioButtonId
@@ -34,8 +36,14 @@ class MainActivity : AppCompatActivity() {
                 genderDisplay.text= getString(R.string.your_gender_is, genderName)
             } else genderDisplay.text = getString(R.string.please_select_a_gender)
 
+        }
 
-
+        radioGroup2.setOnCheckedChangeListener { group, checkedId ->
+            if (checkedId != -1){
+                val weightUnit = findViewById<RadioButton>(checkedId)
+                val unitName = weightUnit.text.toString()
+                secondDisplay.text = unitName
+            }
         }
 
 

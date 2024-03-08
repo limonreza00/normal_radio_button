@@ -55,5 +55,39 @@
         android:layout_marginTop="10dp"/>
 
 
+    <!-- Second Radio Group and button and textview -->
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/secondDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kilogram"
+            android:textSize="25sp"
+            android:layout_marginEnd="10dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pounds"
+            android:textSize="25sp"
+            android:layout_marginStart="10dp"/>
+
+    </RadioGroup>
 
 </LinearLayout>

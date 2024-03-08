@@ -5,5 +5,7 @@
     <string name="male">Male</string>
     <string name="your_gender_is">Your gender is : %s</string>
     <string name="please_select_a_gender">Please Select a gender</string>
+    <string name="kilogram">Kilogram</string>
+    <string name="pounds">Pounds</string>
 
 </resources>
