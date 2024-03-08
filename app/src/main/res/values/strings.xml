@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CustomRadioButton</string>
+    <string name="show">Show</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="your_gender_is">Your gender is : %s</string>
+
+</resources>
