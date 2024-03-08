@@ -28,9 +28,12 @@ class MainActivity : AppCompatActivity() {
 
         showButton.setOnClickListener {
             val selectedButtonId = radioGroup1.checkedRadioButtonId
-            val selectedButton = findViewById<RadioButton>(selectedButtonId)
-            val genderName = selectedButton.text.toString()
-            genderDisplay.text= getString(R.string.your_gender_is, genderName)
+            if (selectedButtonId != -1){
+                val selectedButton = findViewById<RadioButton>(selectedButtonId)
+                val genderName = selectedButton.text.toString()
+                genderDisplay.text= getString(R.string.your_gender_is, genderName)
+            } else genderDisplay.text = getString(R.string.please_select_a_gender)
+
 
 
         }

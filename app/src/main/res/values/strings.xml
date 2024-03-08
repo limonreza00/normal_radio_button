@@ -4,5 +4,6 @@
     <string name="female">Female</string>
     <string name="male">Male</string>
     <string name="your_gender_is">Your gender is : %s</string>
+    <string name="please_select_a_gender">Please Select a gender</string>
 
 </resources>
